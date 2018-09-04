@@ -4,7 +4,7 @@
         data:{
             info:{
                 name:'张凯君',
-                job:'前端工程师'
+                job:'应聘：前端开发'
             }
         },
         methods:{
