@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_819071_jw09mxuu45a.css">
+    <title>个人名片</title>
+</head>
+<body>
+<div class="cards">
+    <div id="card" class="card">
+        <div class="positive">
+            <div class="above">
+                <div class="aboveBottom">
+                    <span>{{name}}</span>
+                </div>
+            </div>
+            <div class="below">
+                <span>{{job}}</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="edit">
+                    <span>M</span>
+                    <input v-model="phone" type="text">
+                </div>
+                    <span>{{phone}}</span>
+            </div>
+            <div class="row">
+                <div class="edit">
+                    <span>E</span>
+                    <input v-model="email" type="text">
+                </div>
+                <span>{{email}}</span>
+            </div>
+            <div class="row">
+                <div class="edit">
+                    <span>A</span>
+                    <input v-model="address" type="text">
+                </div>
+                <span>{{address}}</span>
+            </div>
+            <div class="row">
+                <div class="edit">
+                    <span>B</span>
+                    <input v-model="winxin" type="text">
+                </div>
+                <span>{{winxin}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/positive.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center; }
+
+.cards {
+  transform: scale(1.5);
+  margin-top: 100px;
+  height: 240px;
+  width: 432px;
+  background: linear-gradient(#a8b4b6, #bcc5c7);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cards > .card {
+    position: relative; }
+
+.positive::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  height: 4px;
+  width: 200px;
+  background: gray;
+  z-index: 1; }
+
+.positive::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 196px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: gray; }
+
+.positive {
+  width: 336px;
+  height: 196px;
+  position: relative; }
+  .positive > .above {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg, #5cc7af 0, #5cc7af 2%, #42bc9a 2%, #42bc9a 4%, #5cc7af 4%, #5cc7af 6%, #42bc9a 6%, #42bc9a 8%, #5cc7af 8%, #5cc7af 10%, #42bc9a 10%, #42bc9a 12%, #5cc7af 12%, #5cc7af 14%, #42bc9a 14%, #42bc9a 16%, #5cc7af 16%, #5cc7af 18%, #42bc9a 18%, #42bc9a 20%, #5cc7af 20%, #5cc7af 22%, #42bc9a 22%, #42bc9a 24%, #5cc7af 24%, #5cc7af 26%, #42bc9a 26%, #42bc9a 28%, #5cc7af 28%, #5cc7af 30%, #42bc9a 30%, #42bc9a 32%, #5cc7af 32%, #5cc7af 34%, #42bc9a 34%, #42bc9a 36%, #5cc7af 36%, #5cc7af 38%, #42bc9a 38%, #42bc9a 40%, #5cc7af 40%, #5cc7af 42%, #42bc9a 42%, #42bc9a 44%, #5cc7af 44%, #5cc7af 46%, #42bc9a 46%, #42bc9a 48%, #5cc7af 48%, #5cc7af 50%, #42bc9a 50%, #42bc9a 52%, #5cc7af 52%, #5cc7af 54%, #42bc9a 54%, #42bc9a 56%, #5cc7af 56%, #5cc7af 58%, #42bc9a 58%, #42bc9a 60%, #5cc7af 60%, #5cc7af 62%, #42bc9a 62%, #42bc9a 64%, #5cc7af 64%, #5cc7af 66%, #42bc9a 66%, #42bc9a 68%, #5cc7af 68%, #5cc7af 70%, #42bc9a 70%, #42bc9a 72%, #5cc7af 72%, #5cc7af 74%, #42bc9a 74%, #42bc9a 76%, #5cc7af 76%, #5cc7af 78%, #42bc9a 78%, #42bc9a 80%, #5cc7af 80%, #5cc7af 82%, #42bc9a 82%, #42bc9a 84%, #5cc7af 84%, #5cc7af 86%, #42bc9a 86%, #42bc9a 88%, #5cc7af 88%, #5cc7af 90%, #42bc9a 90%, #42bc9a 92%, #5cc7af 92%, #5cc7af 94%, #42bc9a 94%, #42bc9a 96%, #5cc7af 96%, #5cc7af 98%, #42bc9a 98%, #42bc9a 100%); }
+    .positive > .above > .aboveBottom {
+      position: absolute;
+      bottom: -5px;
+      margin-left: 16px;
+      font-size: 20px;
+      font-style: italic;
+      color: #1c1921; }
+  .positive > .below {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #1c1921 0, #1c1921 2%, #23212a 2%, #23212a 4%, #1c1921 4%, #1c1921 6%, #23212a 6%, #23212a 8%, #1c1921 8%, #1c1921 10%, #23212a 10%, #23212a 12%, #1c1921 12%, #1c1921 14%, #23212a 14%, #23212a 16%, #1c1921 16%, #1c1921 18%, #23212a 18%, #23212a 20%, #1c1921 20%, #1c1921 22%, #23212a 22%, #23212a 24%, #1c1921 24%, #1c1921 26%, #23212a 26%, #23212a 28%, #1c1921 28%, #1c1921 30%, #23212a 30%, #23212a 32%, #1c1921 32%, #1c1921 34%, #23212a 34%, #23212a 36%, #1c1921 36%, #1c1921 38%, #23212a 38%, #23212a 40%, #1c1921 40%, #1c1921 42%, #23212a 42%, #23212a 44%, #1c1921 44%, #1c1921 46%, #23212a 46%, #23212a 48%, #1c1921 48%, #1c1921 50%, #23212a 50%, #23212a 52%, #1c1921 52%, #1c1921 54%, #23212a 54%, #23212a 56%, #1c1921 56%, #1c1921 58%, #23212a 58%, #23212a 60%, #1c1921 60%, #1c1921 62%, #23212a 62%, #23212a 64%, #1c1921 64%, #1c1921 66%, #23212a 66%, #23212a 68%, #1c1921 68%, #1c1921 70%, #23212a 70%, #23212a 72%, #1c1921 72%, #1c1921 74%, #23212a 74%, #23212a 76%, #1c1921 76%, #1c1921 78%, #23212a 78%, #23212a 80%, #1c1921 80%, #1c1921 82%, #23212a 82%, #23212a 84%, #1c1921 84%, #1c1921 86%, #23212a 86%, #23212a 88%, #1c1921 88%, #1c1921 90%, #23212a 90%, #23212a 92%, #1c1921 92%, #1c1921 94%, #23212a 94%, #23212a 96%, #1c1921 96%, #1c1921 98%, #23212a 98%, #23212a 100%); }
+    .positive > .below > span {
+      position: absolute;
+      top: -4px;
+      left: 20px;
+      font-size: 14px;
+      color: #5cc7af; }
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 86px;
+  width: 336px;
+  display: flex;
+  flex-wrap: wrap; }
+  .content > .row {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px; }
+    .content > .row > .edit {
+      height: 19px;
+      width: 18px;
+      background: #5cc7af;
+      position: relative; }
+      .content > .row > .edit > span {
+        text-align: center;
+        display: block;
+        height: 19px;
+        line-height: 19px;
+        color: white;
+        font-weight: bold; }
+      .content > .row > .edit > input {
+        outline: none;
+        border: none;
+        background: gray;
+        width: 100px;
+        margin-left: 22px;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        color: #5cc7af;
+        caret-color: #5cc7af; }
+    .content > .row > span {
+      color: #5cc7af;
+      font-size: 10px;
+      font-weight: bold;
+      padding-left: 5px;
+      position: relative; }
